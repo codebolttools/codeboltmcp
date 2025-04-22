@@ -1,0 +1,9 @@
+name: Codebolt SDK Documentation
+uniqueName: codeboltsdk-docs
+version: 1.0.0
+description: MCP server providing detailed documentation and code examples for the Codebolt SDK
+tags:
+  - documentation
+  - sdk
+  - codebolt
+# No environment variables are required for this MCP
