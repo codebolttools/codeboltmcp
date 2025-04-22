@@ -396,38 +396,16 @@ toolbox.addTool({
 
 async function main() {
   try {
-    
-    // Check that all tools have properly formatted parameters
-    
-    // Activate the toolbox with proper error handling
+    // Activate the toolbox
     await toolbox.activate({
       transportType: "stdio"
     });
     
-    
-    // Keep the process alive
-    process.stdin.resume();
-    
-    // Handle process termination
-    process.on('SIGINT', () => {
-      process.exit(0);
-    });
+    console.log('Codebolt SDK Documentation MCP is running!');
   } catch (error) {
-    process.exit(1); // Exit with error code
+    console.error('Failed to start Codebolt SDK Documentation MCP:', error);
   }
 }
-
-// Add error handler for uncaught exceptions
-process.on('uncaughtException', (error) => {
-  console.error('Uncaught exception:', error);
-  process.exit(1);
-});
-
-// Add error handler for unhandled promise rejections
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('Unhandled promise rejection:', reason);
-  process.exit(1);
-});
 
 main();
 

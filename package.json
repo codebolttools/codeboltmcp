@@ -11,7 +11,7 @@
   "license": "ISC",
   "description": "MCP server providing documentation for the Codebolt SDK",
   "dependencies": {
-    "@codebolt/codeboltjs": "1.1.97",
+    "@codebolt/codeboltjs": "1.1.98",
     "zod": "^3.21.4"
   }
 }
